@@ -14,7 +14,7 @@
   ],
   "type": "mcp",
   "display_name": "Google Workspace MCP",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": {
     "name": "Google"
   },
@@ -101,5 +101,6 @@
     "command": "python",
     "args": [],
     "env": {}
-  }
+  },
+  "schema_version": 1
 }
