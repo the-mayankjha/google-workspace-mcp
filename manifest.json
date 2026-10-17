@@ -1,0 +1,105 @@
+{
+  "id": "google-workspace-mcp",
+  "description": "Work with Gmail, Calendar, Tasks, Drive and Docs through PIHU.",
+  "category": "Productivity",
+  "runtime": {
+    "type": "python"
+  },
+  "tags": [
+    "google",
+    "gmail",
+    "calendar",
+    "drive",
+    "docs"
+  ],
+  "type": "mcp",
+  "display_name": "Google Workspace MCP",
+  "version": "1.0.0",
+  "author": {
+    "name": "Google"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/the-mayankjha/google-workspace-mcp",
+    "branch": "main"
+  },
+  "transport": {
+    "type": "stdio"
+  },
+  "tools": [
+    {
+      "name": "gmail_search",
+      "description": "Search user's real Gmail messages for a query string."
+    },
+    {
+      "name": "gmail_check_unread",
+      "description": "Check for unread Gmail messages using real Gmail API."
+    },
+    {
+      "name": "gmail_send",
+      "description": "Send a real email to a recipient via Gmail API."
+    },
+    {
+      "name": "gmail_get_message",
+      "description": "Get full details and content of a specific Gmail message by ID."
+    },
+    {
+      "name": "calendar_list",
+      "description": "List upcoming real Google Calendar events."
+    },
+    {
+      "name": "calendar_create_event",
+      "description": "Create a new event on Google Calendar with a real Google Meet video call link."
+    },
+    {
+      "name": "tasks_list_tasks",
+      "description": "List tasks from real Google Tasks API."
+    },
+    {
+      "name": "tasks_create_task",
+      "description": "Create a task in Google Tasks."
+    },
+    {
+      "name": "docs_create",
+      "description": "Create a real Google Doc via Google Docs API."
+    },
+    {
+      "name": "drive_search",
+      "description": "Search files in Google Drive."
+    }
+  ],
+  "tool_count": 10,
+  "requirements": [
+    "Python 3.10 or newer"
+  ],
+  "installation": {
+    "type": "archive",
+    "entrypoint": "server.py"
+  },
+  "name": "google-workspace-mcp",
+  "artifacts": [],
+  "compatibility": {
+    "minimum_pihu_version": "1.2.8",
+    "operating_systems": [
+      "macos",
+      "windows",
+      "linux"
+    ],
+    "architectures": [
+      "arm64",
+      "x64"
+    ]
+  },
+  "permissions": {
+    "network": true,
+    "filesystem": false,
+    "shell_execution": false,
+    "env_vars_required": []
+  },
+  "auth_required": true,
+  "entrypoint": {
+    "command": "python",
+    "args": [],
+    "env": {}
+  }
+}
