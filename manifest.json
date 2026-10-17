@@ -14,7 +14,7 @@
   ],
   "type": "mcp",
   "display_name": "Google Workspace MCP",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "author": {
     "name": "Google"
   },
@@ -66,6 +66,86 @@
     {
       "name": "drive_search",
       "description": "Search files in Google Drive."
+    },
+    {
+      "name": "docs_read",
+      "description": "Read a Google document including its text, structure and revision ID."
+    },
+    {
+      "name": "docs_append",
+      "description": "Append reviewed text to a document. Supply revision_id to reject concurrent edits."
+    },
+    {
+      "name": "docs_replace_text",
+      "description": "Replace matching document text, preserving the rest of the document."
+    },
+    {
+      "name": "drive_get_file",
+      "description": "Read Drive file metadata and its browser URL."
+    },
+    {
+      "name": "drive_create_folder",
+      "description": "Create a Drive folder, optionally inside another folder."
+    },
+    {
+      "name": "drive_upload_text",
+      "description": "Upload UTF-8 text or Markdown as a Drive file, optionally to a folder."
+    },
+    {
+      "name": "drive_move_file",
+      "description": "Move a Drive file into a destination folder, removing its previous parent folders."
+    },
+    {
+      "name": "drive_share_file",
+      "description": "Share a specific file with a user. Requires explicit confirmation; role reader/commenter/writer."
+    },
+    {
+      "name": "drive_trash_file",
+      "description": "Move a Drive file to Trash, never permanently delete it. Requires user confirmation."
+    },
+    {
+      "name": "sheets_create",
+      "description": "Create a Google spreadsheet and return its ID and URL."
+    },
+    {
+      "name": "sheets_read",
+      "description": "Read cells using A1 notation, for example Sheet1!A1:D20."
+    },
+    {
+      "name": "sheets_write",
+      "description": "Write rows of literal cell values (RAW), or append rows. Does not evaluate untrusted formulas."
+    },
+    {
+      "name": "slides_create",
+      "description": "Create an empty Google Slides presentation."
+    },
+    {
+      "name": "slides_read",
+      "description": "Read slides, text elements and object IDs in a presentation."
+    },
+    {
+      "name": "slides_add_text_slide",
+      "description": "Append a title and body slide to a Google Slides presentation."
+    },
+    {
+      "name": "calendar_update_event",
+      "description": "Update an event on the primary calendar. Times must be RFC3339 with timezone offsets."
+    },
+    {
+      "name": "calendar_delete_event",
+      "description": "Delete a primary-calendar event after explicit user confirmation."
+    },
+    {
+      "name": "tasks_update_task",
+      "description": "Edit or complete a Google Task in the default task list."
+    },
+    {
+      "name": "tasks_delete_task",
+      "description": "Delete a task after explicit user confirmation."
+    },
+    {
+      "name": "docs_format",
+      "description": "Format a document range as heading1, heading2, heading3, normal, bold or italic. Indices are Google Docs UTF-16 indices (body starts at 1)."
     }
   ],
   "tool_count": 10,
