@@ -260,7 +260,7 @@ def create_calendar_event(summary, start_time=None, end_time=None, description="
 # ── TASKS ───────────────────────────────────────────────────────────────────
 
 def list_tasks():
-    url = "https://tasks.googleapis.com/tasks/v1/users/@me/lists/@default/tasks?showCompleted=false"
+    url = "https://tasks.googleapis.com/tasks/v1/lists/@default/tasks?showCompleted=false"
     resp = make_google_api_request(url)
     
     items = resp.get("items", [])
@@ -279,7 +279,7 @@ def list_tasks():
     }
 
 def create_task(title, due=None, notes=""):
-    url = "https://tasks.googleapis.com/tasks/v1/users/@me/lists/@default/tasks"
+    url = "https://tasks.googleapis.com/tasks/v1/lists/@default/tasks"
     body = {"title": title, "notes": notes}
     if due:
         body["due"] = due if "T" in due else f"{due}T00:00:00.000Z"
